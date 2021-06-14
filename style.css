@@ -1,0 +1,96 @@
+
+@font-face{
+
+  font-family: Cooper-Hewitt;
+  src: url(Fonts/CooperHewitt-Book.otf);
+}
+
+@font-face{
+  font-family: Gagalin;
+  src: url(Fonts/Gagalin-Regular.otf);
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.title-home {
+  font-family: Gagalin;
+  color: white;
+  font-size: 40px;
+}
+h5 {
+  font-family: Cooper-Hewitt;
+  font-size: 22px;
+}
+.bt-text{
+  font-family: Gagalin;
+  color: red;
+  font-size: 18px;
+  margin-top: 80px;
+}
+.btn-cir-tri {
+  height: 40px;
+  width: 40px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.section-dark {
+  height: 100%;
+  width: 100%;
+  display:inline-block;
+  padding:0px;
+  margin:0px;
+  background: #1c2737;
+  animation: fadebackground 10s ;
+}
+
+@keyframes fadebackground {
+  from {background-color: #f3f3f3;}
+  to {background-color: #1c2737;}
+}
+
+#triangle-button img {
+  animation: fadeimage 7s ease-in;
+}
+@keyframes fadeimage {
+  from{background-image: url(Svg/triangle-empty.svg);}
+  to{background-image: url(Svg/triangle-filled.svg);}
+}
+
+.last-section h5 {
+  font-size:31px;
+  text-transform: uppercase;
+}
+
+
+.line-1{
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
